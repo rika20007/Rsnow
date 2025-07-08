@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>منتجات Rsnow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>منتجات Rsnow</h1>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="photo/1.jpg" alt="كعكة الشوكولا" />
+      <h3>كعكة الشوكولا</h3>
+      <p>3000 دج</p>
+      <button onclick="setProduct('كعكة الشوكولا')">اطلب الآن</button>
+    </div>
+    <div class="product">
+      <img src="photo/2.jpg" alt="طرطة الفراولة" />
+      <h3>طرطة الفراولة</h3>
+      <p>3500 دج</p>
+      <button onclick="setProduct('طرطة الفراولة')">اطلب الآن</button>
+    </div>
+    <div class="product">
+      <img src="photo/3.jpg" alt="بوكس هدايا" />
+      <h3>بوكس هدايا</h3>
+      <p>2500 دج</p>
+      <button onclick="setProduct('بوكس هدايا')">اطلب الآن</button>
+    </div>
+  </section>
+
+  <section class="chatbox">
+    <h2>معلومات الطلب</h2>
+    <input type="text" id="username" placeholder="اسمك الكامل" />
+    <input type="text" id="phone" placeholder="رقم الهاتف" />
+    <input type="text" id="wilaya" placeholder="الولاية" />
+    <input type="text" id="address" placeholder="العنوان الكامل" />
+    <input type="text" id="product" placeholder="نوع الطلب" />
+    <textarea id="notes" placeholder="ملاحظات إضافية..."></textarea>
+    <button onclick="sendWhatsApp()">إرسال عبر واتساب</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
